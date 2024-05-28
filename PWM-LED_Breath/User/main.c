@@ -1,13 +1,11 @@
 #include "stm32f10x.h"                  // 設備頭文件
 #include "Delay.h"
-#include "OLED.h"
 #include "PWM.h"
 
 uint8_t i;  // 定義 for 循環的變量
 
 int main(void) {
     /* 模塊初始化 */
-    OLED_Init();  // OLED 初始化
     PWM_Init();   // PWM 初始化
 
     while (1) {
